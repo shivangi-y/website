@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Shivangi Yadav</title>
+
+<style>
+
+:root{
+--accent:#0b62d6;
+--muted:#666;
+--bg:#f6f8fb;
+}
+
+body{
+margin:0;
+font-family: Georgia, "Times New Roman", serif;
+background:var(--bg);
+color:#111;
+font-size:15px;
+padding-top:40px;   /* space for fixed topbar */
+}
+
+/* Top black bar */
+
+.topbar{
+background:black;
+color:white;
+height:40px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding-left:25px;
+padding-right:25px;
+font-size:16px;
+
+position:fixed;
+top:0;
+width:100%;
+z-index:1001;
+}
+
+.home a{
+color:white;
+text-decoration:none;
+font-size:16px;
+}
+
+.home-icon{
+margin-right:6px;
+}
+
+/* Banner image */
+
+.banner{
+background-image:url("chalkboard.jpg");
+height:70px;
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+
+position:sticky;
+top:40px;          /* because topbar height is 40px */
+z-index:1000;
+
+border-bottom:1px solid #ccc;   /* grey line */
+}
+
+
+/* Navigation menu on banner */
+
+.banner-menu{
+display:flex;
+gap:55px;
+}
+
+.banner-menu a{
+color:white;
+font-size:15px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.banner-menu a:hover{
+color:#4CAF50;
+}
+
+.banner-menu a.active{
+border-bottom:2px solid #4CAF50;
+padding-bottom:3px;
+}
+
+
+
+/* Page content */
+
+.container{
+max-width:1150px;
+margin:50px auto;
+padding:0 20px;
+}
+
+h5{
+font-size:17px;
+margin-bottom:10px;
+color:#000080;
+}
+
+p{
+font-size:15px;
+line-height:1.4;
+color:#333;
+}
+
+ul{
+font-size:15px;
+line-height:1.4;
+}
+
+ul li{
+margin-bottom:14px;
+}
+
+/* Links */
+
+a{
+color:var(--accent);
+text-decoration:underline;
+}
+
+a:hover{
+color:#0a4fb0;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- Black top bar -->
+
+<div class="topbar">
+
+<div class="home">
+<a href="index.html">
+<span class="home-icon">⌂</span>
+<span class="home-name">Shivangi Yadav</span>
+</a>
+</div>
+
+</div>
+
+
+
+<!-- Banner with navigation links -->
+
+<div class="banner">
+
+<div class="banner-menu">
+
+<a href="publications.html">Publications</a>
+
+<a href="talks.html">Talks</a>
+
+<a href="academic.html" class="active">Academic activities</a>
+
+<a href="teaching.html">Teaching</a>
+
+<a href="awards.html">Awards and honors</a>
+
+</div>
+
+</div>
+
+
+
+<!-- Page content -->
+
+<div class="container">
+
+
+<h5>Seminar organization</h5>
+
+<ul>
+<li>
+<strong>Aug - Dec 2024:</strong> Organizer, 
+<a href="https://sites.google.com/iitgn.ac.in/gradmathseminar/home">Graduate Students' Seminar</a> 
+(with Prof. Projesh Nath Choudhury and Siddhi Balu Ambhore), IIT Gandhinagar.
+</li>
+</ul>
+
+
+<h5>Conferences and workshops attended</h5>
+
+<ul>
+
+<li>
+<strong>Jan 12 - 16, 2026:</strong> 
+<a href="https://sites.google.com/view/emstmc2026/home">Indo-European Conference on Mathematics</a>, 
+SPPU and IISER Pune, Maharashtra, India.
+</li>
+
+<li>
+<strong>Dec 15, 2025 - Jan 03, 2026:</strong> 
+<a href="https://www.atmschools.org/school/2025/AIS/ac">AIS - Advanced Combinatorics</a>, 
+Ahmedabad University, Ahmedabad, India.
+</li>
+
+<li>
+<strong>Oct 27 - 31, 2025:</strong> 
+<a href="https://gian.iith.ac.in/">Global Initiative of Academic Networks</a> Course on 
+<a href="https://drive.google.com/file/d/1LaEzRj7cmMs7eMb5moRVSadhHRBniDCy/view">Spectral Graph Theory</a>, 
+IIT Hyderabad, Hyderabad, India.
+</li>
+
+<li>
+<strong>Jun 23 - 27, 2025:</strong> 
+<a href="https://ilas2025.tw/">26th Conference of the International Linear Algebra Society</a>, 
+National Sun Yat-sen University, Kaohsiung, Taiwan.
+</li>
+
+<li>
+<strong>Jul 08 - 13, 2024:</strong> 
+Asian and European Schools in Mathematics on 
+<a href="https://sites.google.com/iiserb.ac.in/schoolonlinearpreserverproblem/home">Linear Preserver Problems</a>, 
+IISER Bhopal, Bhopal, India.
+</li>
+
+<li>
+<strong>Dec 18 - 21, 2023:</strong> 
+<a href="#">International Conference on Linear Algebra and its Applications</a>, 
+Manipal Academy of Higher Education, Manipal, India.
+</li>
+
+<li>
+<strong>Dec 11 - 17, 2023:</strong> 
+<a href="#">International Workshop on Special Matrices, Graphs, and Applications</a>, 
+Manipal Academy of Higher Education, Manipal, India.
+</li>
+
+<li>
+<strong>Mar 06 - 11, 2023:</strong> 
+<a href="https://www.atmschools.org/school/2023/NCMW/wotoa">NCMW - Operator Theory and Operator Algebra</a>, 
+IIT Gandhinagar, Gandhinagar, India.
+</li>
+
+<li>
+<strong>Mar 21 - 22, 2017:</strong> 
+Mathematics Symposium organized by the Department of Mathematics, 
+St. Stephen’s College, University of Delhi, New Delhi, India.
+</li>
+
+</ul>
+
+
+<h5>Summer internships</h5>
+
+<ul>
+
+<li>
+<strong>May 20 - Jul 12, 2019:</strong> 
+IISER Kolkata, 
+<a href="https://math.iiserkol.ac.in/">Department of Mathematics and Statistics</a>, 
+under the supervision of Prof. 
+<a href="https://math.iiserkol.ac.in/faculties/zinna.html">Md. Ali Zinna</a>, 
+on the topic, "Study of Group Theory".
+</li>
+
+</ul>
+
+
+</div>
+
+
+</body>
+</html>

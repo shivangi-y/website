@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Shivangi Yadav</title>
+
+<style>
+
+:root{
+--accent:#0b62d6;
+--muted:#666;
+--bg:#f6f8fb;
+}
+
+body{
+margin:0;
+font-family: Georgia, "Times New Roman", serif;
+background:var(--bg);
+color:#111;
+font-size:15px;
+padding-top:40px;   /* space for fixed topbar */
+}
+
+/* Top black bar */
+
+.topbar{
+background:black;
+color:white;
+height:40px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding-left:25px;
+padding-right:25px;
+font-size:16px;
+
+position:fixed;
+top:0;
+width:100%;
+z-index:1001;
+}
+
+.home a{
+color:white;
+text-decoration:none;
+font-size:16px;
+}
+
+.home-icon{
+margin-right:6px;
+}
+
+/* Banner image */
+
+.banner{
+background-image:url("chalkboard.jpg");
+height:70px;
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+
+position:sticky;
+top:40px;          /* because topbar height is 40px */
+z-index:1000;
+
+border-bottom:1px solid #ccc;   /* grey line */
+}
+
+
+/* Navigation menu on banner */
+
+.banner-menu{
+display:flex;
+gap:55px;
+}
+
+.banner-menu a{
+color:white;
+font-size:15px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.banner-menu a:hover{
+color:#4CAF50;
+}
+
+
+.banner-menu a.active{
+border-bottom:2px solid #4CAF50;
+padding-bottom:3px;
+}
+
+
+/* Page content */
+
+.container{
+max-width:1150px;
+margin:50px auto;
+padding:0 20px;
+}
+
+h5{
+font-size:17px;
+margin-bottom:10px;
+color:#000080;
+}
+
+p{
+font-size:15px;
+line-height:1.4;
+color:#333;
+}
+
+ul{
+font-size:15px;
+line-height:1.4;
+}
+
+ul li{
+margin-bottom:14px;
+}
+
+/* Links */
+
+a{
+color:var(--accent);
+text-decoration:underline;
+}
+
+a:hover{
+color:#0a4fb0;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- Black top bar -->
+
+<div class="topbar">
+
+<div class="home">
+<a href="index.html">
+<span class="home-icon">⌂</span>
+<span class="home-name">Shivangi Yadav</span>
+</a>
+</div>
+
+</div>
+
+
+
+<!-- Banner -->
+
+<div class="banner">
+
+<div class="banner-menu">
+
+<a href="publications.html">Publications</a>
+
+<a href="talks.html">Talks</a>
+
+<a href="academic.html">Academic activities</a>
+
+<a href="teaching.html">Teaching</a>
+
+<a href="awards.html" class="active">Awards and honors</a>
+
+</div>
+
+</div>
+
+
+
+<!-- Page content -->
+
+<div class="container">
+
+<h5>Academic achievements</h5>
+
+<ul>
+
+<li>
+<strong>2025:</strong> 
+<a href="https://www.kvrss.org/research-awards.html">Dr. K.V. Rao Scientific Society</a> research award (Runner-Up II) in Mathematics.
+</li>
+
+<li>
+<strong>2025:</strong> Selected for financial support by the International Linear Algebra Society (700 USD) to attend 
+<a href="https://ilas2025.tw/">ILAS2025</a>.
+</li>
+
+<li>
+<strong>2024:</strong> Received the best poster award (Mathematics) at the postgraduate research showcase held at IIT Gandhinagar.
+</li>
+
+<li>
+<strong>2022:</strong> Received a certificate of appreciation and a book for outstanding performance as a tutor for the course MA 201 Mathematics - III.
+</li>
+
+<li>
+<strong>2021:</strong> Received an additional fellowship of 5000 INR per month for 36 months during Ph.D. in view of excellent academic credentials.
+</li>
+
+<li>
+<strong>2020:</strong> Qualified CSIR UGC NET-Lectureship in Mathematical Sciences (AIR 67).
+</li>
+
+<li>
+<strong>2020:</strong> Qualified Graduate Aptitude Test in Engineering (GATE) in Mathematics (AIR 206).
+</li>
+
+<li>
+<strong>2018:</strong> Qualified Joint Admission Test for Masters (JAM) in Mathematics (AIR 667).
+</li>
+
+<li>
+<strong>2015:</strong> Received a certificate of merit in class 12th from Kendriya Vidyalaya Thane, Maharashtra, for obtaining 94.80% in the CBSE board exams.
+</li>
+
+<li>
+<strong>2013:</strong> Received certificates of merit from the Central Board of Secondary Education (CBSE) and Kendriya Vidyalaya Sangathan (KVS), along with a monetary award in class 10th for obtaining a 10/10 CGPA in the CBSE board exams.
+</li>
+
+</ul>
+
+</div>
+
+</body>
+</html>

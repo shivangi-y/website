@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Shivangi Yadav</title>
+
+<style>
+
+:root{
+--accent:#0b62d6;
+--muted:#666;
+--bg:#f6f8fb;
+}
+
+body{
+margin:0;
+font-family: Georgia, "Times New Roman", serif;
+background:var(--bg);
+color:#111;
+font-size:15px;
+padding-top:40px;   /* space for fixed topbar */
+}
+
+/* Top black bar */
+
+.topbar{
+background:black;
+color:white;
+height:40px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding-left:25px;
+padding-right:25px;
+font-size:16px;
+
+position:fixed;
+top:0;
+width:100%;
+z-index:1001;
+}
+
+.home a{
+color:white;
+text-decoration:none;
+font-size:16px;
+}
+
+.home-icon{
+margin-right:6px;
+}
+
+/* Banner image */
+
+.banner{
+background-image:url("chalkboard.jpg");
+height:70px;
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+
+position:sticky;
+top:40px;          /* because topbar height is 40px */
+z-index:1000;
+
+border-bottom:1px solid #ccc;   /* grey line */
+}
+
+
+/* Navigation menu on banner */
+
+.banner-menu{
+display:flex;
+gap:55px;
+}
+
+.banner-menu a{
+color:white;
+font-size:15px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.banner-menu a:hover{
+color:#4CAF50;
+}
+
+.banner-menu a.active{
+border-bottom:2px solid #4CAF50;
+padding-bottom:3px;
+}
+
+
+
+/* Page content */
+
+.container{
+max-width:1150px;
+margin:50px auto;
+padding:0 20px;
+}
+
+h5{
+font-size:17px;
+margin-bottom:10px;
+color:#000080;
+}
+
+p{
+font-size:15px;
+line-height:1.4;
+color:#333;
+}
+
+ul{
+font-size:15px;
+line-height:1.4;
+}
+
+ul li{
+margin-bottom:14px;
+}
+
+/* Links */
+
+a{
+color:var(--accent);
+text-decoration:underline;
+}
+
+a:hover{
+color:#0a4fb0;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- Black top bar -->
+
+<div class="topbar">
+
+<div class="home">
+<a href="index.html">
+<span class="home-icon">⌂</span>
+<span class="home-name">Shivangi Yadav</span>
+</a>
+</div>
+
+</div>
+
+
+
+<!-- Banner with navigation links -->
+
+<div class="banner">
+
+<div class="banner-menu">
+
+<a href="publications.html">Publications</a>
+
+<a href="talks.html" class="active">Talks</a>
+
+<a href="academic.html">Academic activities</a>
+
+<a href="teaching.html">Teaching</a>
+
+<a href="awards.html">Awards and honors</a>
+
+</div>
+
+</div>
+
+
+
+<!-- Page content -->
+
+<div class="container">
+
+<h5>Talks</h5>
+
+<ul>
+
+<li> 
+<strong>Apr 07, 2026:</strong> 
+<a href="https://sites.google.com/iitgn.ac.in/gradmathseminar/home">Graduate Math Meet</a>, 
+Indian Institute of Technology Gandhinagar, Gandhinagar, India. <br>
+<em>Title: The Arzelà-Ascoli theorem. </em>
+</li>
+
+
+<li> 
+<strong>Jan 14, 2026:</strong> 
+<a href="https://sites.google.com/view/emstmc2026/home">Indo-European Conference on Mathematics</a>, 
+Savitribai Phule Pune University and Indian Institute of Science Education and Research Pune, Maharashtra, India (Contributed). <br>
+<em>Title: Sign regularity and variation diminution: single-vector tests and characterizations.</em>
+</li>
+
+<li>
+<strong>Jun 23, 2025:</strong> 
+<a href="https://ilas2025.tw/">26th Conference of the International Linear Algebra Society</a>, 
+<a href="https://math.iisc.ac.in/~khare/conferences/ILAS2025.html">Mini-symposium on Total Positivity</a>, 
+National Sun Yat-sen University, Kaohsiung, Taiwan (Invited). <br>
+<em>Title: Sign regularity preserving linear operators.</em>
+</li>
+
+<li>
+<strong>Dec 21, 2023:</strong> 
+<a href="#">International Conference on Linear Algebra and its Applications</a>, 
+Manipal Academy of Higher Education, Manipal, India (Contributed). <br>
+<em>Title: Sign regularity via variation diminution: an overview.</em>
+</li>
+
+<li>
+<strong>Oct 04, 2023:</strong> 
+<a href="https://sites.google.com/iitgn.ac.in/gradmathseminar/home">Graduate Students' Seminar</a>, 
+Indian Institute of Technology Gandhinagar, Gandhinagar, India. <br>
+<em>Title: The history of matrix positive semidefiniteness preservers.</em>
+</li>
+
+</ul>
+
+</div>
+
+
+</body>
+</html>
