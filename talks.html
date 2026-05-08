@@ -5,6 +5,8 @@
 
 <title>Shivangi Yadav</title>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 
 :root{
@@ -19,21 +21,14 @@ font-family: Georgia, "Times New Roman", serif;
 background:var(--bg);
 color:#111;
 font-size:15px;
-padding-top:40px;   /* space for fixed topbar */
+padding-top:40px;
 }
 
-/* Top black bar */
+/* Top black bar (empty now) */
 
 .topbar{
 background:black;
-color:white;
 height:40px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding-left:25px;
-padding-right:25px;
-font-size:16px;
 
 position:fixed;
 top:0;
@@ -41,21 +36,12 @@ width:100%;
 z-index:1001;
 }
 
-.home a{
-color:white;
-text-decoration:none;
-font-size:16px;
-}
-
-.home-icon{
-margin-right:6px;
-}
 
 /* Banner image */
 
 .banner{
 background-image:url("chalkboard.jpg");
-height:70px;
+height:80px;
 background-size:cover;
 background-position:center;
 display:flex;
@@ -63,18 +49,21 @@ align-items:center;
 justify-content:center;
 
 position:sticky;
-top:40px;          /* because topbar height is 40px */
+top:40px;
 z-index:1000;
 
-border-bottom:1px solid #ccc;   /* grey line */
+border-bottom:1px solid #ccc;
 }
 
 
-/* Navigation menu on banner */
+/* Navigation menu */
 
 .banner-menu{
 display:flex;
-gap:55px;
+gap:40px;
+flex-wrap:wrap;          /* ✅ mobile fix */
+justify-content:center;
+padding:5px 10px;
 }
 
 .banner-menu a{
@@ -94,12 +83,11 @@ padding-bottom:3px;
 }
 
 
-
 /* Page content */
 
 .container{
 max-width:1150px;
-margin:50px auto;
+margin:30px auto;
 padding:0 20px;
 }
 
@@ -118,11 +106,13 @@ color:#333;
 ul{
 font-size:15px;
 line-height:1.4;
+padding-left:18px;
 }
 
 ul li{
 margin-bottom:14px;
 }
+
 
 /* Links */
 
@@ -135,6 +125,31 @@ a:hover{
 color:#0a4fb0;
 }
 
+
+/* ✅ MOBILE IMPROVEMENTS */
+
+@media (max-width:768px){
+
+.banner{
+height:auto;
+padding:10px 0;
+}
+
+.banner-menu{
+gap:15px;
+}
+
+.container{
+margin:20px auto;
+padding:0 15px;
+}
+
+h5{
+text-align:center;
+}
+
+}
+
 </style>
 
 </head>
@@ -143,26 +158,18 @@ color:#0a4fb0;
 <body>
 
 
-<!-- Black top bar -->
+<!-- Top bar -->
 
-<div class="topbar">
-
-<div class="home">
-<a href="index.html">
-<span class="home-icon">⌂</span>
-<span class="home-name">Shivangi Yadav</span>
-</a>
-</div>
-
-</div>
+<div class="topbar"></div>
 
 
-
-<!-- Banner with navigation links -->
+<!-- Banner with navigation -->
 
 <div class="banner">
 
 <div class="banner-menu">
+
+<a href="index.html">Home</a>
 
 <a href="publications.html">Publications</a>
 
@@ -190,7 +197,7 @@ color:#0a4fb0;
 
 <li> 
 <strong>Apr 07, 2026:</strong> 
-<a href="https://sites.google.com/iitgn.ac.in/gradmathseminar/home">Graduate Math Meet</a>, 
+<a href="https://sites.google.com/iitgn.ac.in/gradmathseminar/home" target="_blank" rel="noopener noreferrer">Graduate Math Meet</a>, 
 Indian Institute of Technology Gandhinagar, Gandhinagar, India. <br>
 <em>Title: The Arzelà-Ascoli theorem. </em>
 </li>
@@ -198,29 +205,29 @@ Indian Institute of Technology Gandhinagar, Gandhinagar, India. <br>
 
 <li> 
 <strong>Jan 14, 2026:</strong> 
-<a href="https://sites.google.com/view/emstmc2026/home">Indo-European Conference on Mathematics</a>, 
+<a href="https://sites.google.com/view/emstmc2026/home" target="_blank" rel="noopener noreferrer">Indo-European Conference on Mathematics</a>, 
 Savitribai Phule Pune University and Indian Institute of Science Education and Research Pune, Maharashtra, India (Contributed). <br>
 <em>Title: Sign regularity and variation diminution: single-vector tests and characterizations.</em>
 </li>
 
 <li>
 <strong>Jun 23, 2025:</strong> 
-<a href="https://ilas2025.tw/">26th Conference of the International Linear Algebra Society</a>, 
-<a href="https://math.iisc.ac.in/~khare/conferences/ILAS2025.html">Mini-symposium on Total Positivity</a>, 
+<a href="https://ilas2025.tw/" target="_blank" rel="noopener noreferrer">26th Conference of the International Linear Algebra Society</a>, 
+<a href="https://math.iisc.ac.in/~khare/conferences/ILAS2025.html" target="_blank" rel="noopener noreferrer">Mini-symposium on Total Positivity</a>, 
 National Sun Yat-sen University, Kaohsiung, Taiwan (Invited). <br>
 <em>Title: Sign regularity preserving linear operators.</em>
 </li>
 
 <li>
 <strong>Dec 21, 2023:</strong> 
-<a href="#">International Conference on Linear Algebra and its Applications</a>, 
+<a href="https://carams.in/events/iclaa2023/" target="_blank" rel="noopener noreferrer">International Conference on Linear Algebra and its Applications</a>, 
 Manipal Academy of Higher Education, Manipal, India (Contributed). <br>
 <em>Title: Sign regularity via variation diminution: an overview.</em>
 </li>
 
 <li>
 <strong>Oct 04, 2023:</strong> 
-<a href="https://sites.google.com/iitgn.ac.in/gradmathseminar/home">Graduate Students' Seminar</a>, 
+<a href="https://sites.google.com/iitgn.ac.in/gradmathseminar/home" target="_blank" rel="noopener noreferrer">Graduate Students' Seminar</a>, 
 Indian Institute of Technology Gandhinagar, Gandhinagar, India. <br>
 <em>Title: The history of matrix positive semidefiniteness preservers.</em>
 </li>
@@ -228,7 +235,6 @@ Indian Institute of Technology Gandhinagar, Gandhinagar, India. <br>
 </ul>
 
 </div>
-
 
 </body>
 </html>
