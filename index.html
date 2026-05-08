@@ -28,7 +28,7 @@ font-family: Georgia, "Times New Roman", serif;
 background:var(--bg);
 color:#111;
 font-size:15px;
-padding-top:20px;
+padding-top:60px;
 }
 
 /* LINKS */
@@ -47,10 +47,11 @@ color:var(--accent);
 .topbar{
 background:#000;
 color:#fff;
-padding:12px 40px;
+padding:20px 40px;
 display:flex;
+justify-content:center;
 align-items:center;
-font-size:16px;
+font-size:18px;
 
 position:fixed;
 top:0;
@@ -58,24 +59,20 @@ width:100%;
 z-index:1001;
 }
 
-.topbar a{
-color:#fff;
-text-decoration:none;
-}
-
-.home-icon{
-margin-right:6px;
+.title{
+font-weight:500;
+letter-spacing:0.5px;
 }
 
 /* MAIN WRAPPER */
 
 .container{
 max-width:1150px;
-margin:40px auto;
+margin:10px auto;   /* 🔥 reduced spacing */
 }
 
 .content{
-padding:20px 40px;
+padding:10px 40px;  /* slightly reduced */
 }
 
 /* TOP SECTION */
@@ -85,7 +82,7 @@ display:flex;
 align-items:flex-start;
 justify-content:space-between;
 gap:60px;
-margin-bottom:40px;
+margin-bottom:30px;  /* reduced */
 }
 
 /* PHOTO */
@@ -102,7 +99,7 @@ object-fit:cover;
 .about{
 flex:3;
 max-width:650px;
-margin-top:8px;
+margin-top:0;  /* removed extra spacing */
 }
 
 h5{
@@ -126,7 +123,7 @@ min-width:180px;
 display:flex;
 flex-direction:column;
 gap:16px;
-margin-top:18px;
+margin-top:10px;
 }
 
 .links a{
@@ -142,9 +139,9 @@ color:var(--hover);
 /* MAIN CONTENT */
 
 main{
-margin-top:25px;
+margin-top:15px;
 display:grid;
-gap:25px;
+gap:20px;
 }
 
 /* LISTS */
@@ -162,17 +159,17 @@ margin-bottom:14px;
 /* CONTACT */
 
 footer{
-margin-top:60px;
-padding-top:20px;
+margin-top:40px;
+padding-top:15px;
 border-top:1px solid #ddd;
-display:flex;
-justify-content:center;
 }
 
 .contact-grid{
 display:flex;
-gap:100px;
+justify-content:space-between;
 align-items:flex-start;
+max-width:800px;
+margin:0 auto;
 font-size:13px;
 color:var(--muted);
 }
@@ -191,7 +188,17 @@ line-height:1.6;
 
 .top-section{
 flex-direction:column;
-gap:25px;
+gap:20px;
+}
+
+/* center photo */
+.photo{
+display:flex;
+justify-content:center;
+}
+
+.photo img{
+margin:0 auto;
 }
 
 .links{
@@ -202,8 +209,9 @@ gap:14px;
 
 .contact-grid{
 flex-direction:column;
-gap:25px;
+gap:20px;
 align-items:center;
+max-width:100%;
 }
 
 }
@@ -217,12 +225,8 @@ align-items:center;
 <!-- TOP BAR -->
 
 <div class="topbar">
-<a href="index.html">
-<span class="home-icon">⌂</span>
-<span>Shivangi Yadav</span>
-</a>
+<span class="title">Website of Shivangi Yadav</span>
 </div>
-
 
 <div class="container">
 <div class="content">
@@ -277,7 +281,6 @@ You can find my curriculum vitae
 
 <ul>
 
-
 <li>
 Research Associate-I in <a href="https://math.iisc.ac.in/">Mathematics</a>,
 <a href="https://iisc.ac.in/">Indian Institute of Science</a>, Bengaluru
@@ -286,8 +289,6 @@ Research Associate-I in <a href="https://math.iisc.ac.in/">Mathematics</a>,
 <a href="https://math.iisc.ac.in/~khare/">Apoorva Khare</a>
 </li>
 
-
-
 <li>
 Postdoctoral Fellow in <a href="https://math.iitgn.ac.in/">Mathematics</a>,
 <a href="https://iitgn.ac.in/">Indian Institute of Technology Gandhinagar</a>
@@ -295,8 +296,6 @@ Postdoctoral Fellow in <a href="https://math.iitgn.ac.in/">Mathematics</a>,
 <em>Mentor:</em> Prof.
 <a href="https://projesh.people.iitgn.ac.in/">Projesh Nath Choudhury</a>
 </li>
-
-
 
 <li>
 Ph.D. in <a href="https://math.iitgn.ac.in/">Mathematics</a>,
@@ -331,23 +330,19 @@ B.Sc. (Hons.) in
 <div class="contact-grid">
 
 <div class="contact-block">
-
 <div class="contact-text">
 <strong>Email</strong><br>
 shivangi97 [dot] y [at] gmail [dot] com
 </div>
-
 </div>
 
 <div class="contact-block">
-
-<div class="contact-text">
+<div class="contact-text" style="text-align:right;">
 <strong>Office</strong><br>
 Office no. L28, Department of Mathematics<br>
 Indian Institute of Science, CV Raman Road<br>
 Bengaluru, Karnataka - 560012, India
 </div>
-
 </div>
 
 </div>
