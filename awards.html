@@ -5,6 +5,8 @@
 
 <title>Shivangi Yadav</title>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 
 :root{
@@ -19,21 +21,14 @@ font-family: Georgia, "Times New Roman", serif;
 background:var(--bg);
 color:#111;
 font-size:15px;
-padding-top:40px;   /* space for fixed topbar */
+padding-top:40px;
 }
 
-/* Top black bar */
+/* Top bar (empty) */
 
 .topbar{
 background:black;
-color:white;
 height:40px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding-left:25px;
-padding-right:25px;
-font-size:16px;
 
 position:fixed;
 top:0;
@@ -41,21 +36,12 @@ width:100%;
 z-index:1001;
 }
 
-.home a{
-color:white;
-text-decoration:none;
-font-size:16px;
-}
 
-.home-icon{
-margin-right:6px;
-}
-
-/* Banner image */
+/* Banner */
 
 .banner{
 background-image:url("chalkboard.jpg");
-height:70px;
+height:80px;
 background-size:cover;
 background-position:center;
 display:flex;
@@ -63,18 +49,21 @@ align-items:center;
 justify-content:center;
 
 position:sticky;
-top:40px;          /* because topbar height is 40px */
+top:40px;
 z-index:1000;
 
-border-bottom:1px solid #ccc;   /* grey line */
+border-bottom:1px solid #ccc;
 }
 
 
-/* Navigation menu on banner */
+/* Navigation */
 
 .banner-menu{
 display:flex;
-gap:55px;
+gap:40px;
+flex-wrap:wrap;
+justify-content:center;
+padding:5px 10px;
 }
 
 .banner-menu a{
@@ -88,18 +77,17 @@ transition:0.3s;
 color:#4CAF50;
 }
 
-
 .banner-menu a.active{
 border-bottom:2px solid #4CAF50;
 padding-bottom:3px;
 }
 
 
-/* Page content */
+/* Content */
 
 .container{
 max-width:1150px;
-margin:50px auto;
+margin:30px auto;
 padding:0 20px;
 }
 
@@ -109,20 +97,16 @@ margin-bottom:10px;
 color:#000080;
 }
 
-p{
-font-size:15px;
-line-height:1.4;
-color:#333;
-}
-
 ul{
 font-size:15px;
 line-height:1.4;
+padding-left:18px;
 }
 
 ul li{
 margin-bottom:14px;
 }
+
 
 /* Links */
 
@@ -135,6 +119,31 @@ a:hover{
 color:#0a4fb0;
 }
 
+
+/* Mobile */
+
+@media (max-width:768px){
+
+.banner{
+height:auto;
+padding:10px 0;
+}
+
+.banner-menu{
+gap:15px;
+}
+
+.container{
+margin:20px auto;
+padding:0 15px;
+}
+
+h5{
+text-align:center;
+}
+
+}
+
 </style>
 
 </head>
@@ -143,26 +152,18 @@ color:#0a4fb0;
 <body>
 
 
-<!-- Black top bar -->
+<!-- Top bar -->
 
-<div class="topbar">
-
-<div class="home">
-<a href="index.html">
-<span class="home-icon">⌂</span>
-<span class="home-name">Shivangi Yadav</span>
-</a>
-</div>
-
-</div>
+<div class="topbar"></div>
 
 
-
-<!-- Banner -->
+<!-- Banner navigation -->
 
 <div class="banner">
 
 <div class="banner-menu">
+
+<a href="index.html">Home</a>
 
 <a href="publications.html">Publications</a>
 
@@ -180,7 +181,7 @@ color:#0a4fb0;
 
 
 
-<!-- Page content -->
+<!-- Content -->
 
 <div class="container">
 
@@ -190,12 +191,12 @@ color:#0a4fb0;
 
 <li>
 <strong>2025:</strong> 
-<a href="https://www.kvrss.org/research-awards.html">Dr. K.V. Rao Scientific Society</a> research award (Runner-Up II) in Mathematics.
+<a href="https://www.kvrss.org/research-awards.html" target="_blank" rel="noopener noreferrer">Dr. K.V. Rao Scientific Society</a> research award (Runner-Up II) in Mathematics.
 </li>
 
 <li>
 <strong>2025:</strong> Selected for financial support by the International Linear Algebra Society (700 USD) to attend 
-<a href="https://ilas2025.tw/">ILAS2025</a>.
+<a href="https://ilas2025.tw/" target="_blank" rel="noopener noreferrer">ILAS2025</a>.
 </li>
 
 <li>
