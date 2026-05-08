@@ -5,6 +5,8 @@
 
 <title>Shivangi Yadav</title>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 
 :root{
@@ -19,21 +21,14 @@ font-family: Georgia, "Times New Roman", serif;
 background:var(--bg);
 color:#111;
 font-size:15px;
-padding-top:40px;   /* space for fixed topbar */
+padding-top:40px;
 }
 
-/* Top black bar */
+/* Top black bar (now empty, just for style) */
 
 .topbar{
 background:black;
-color:white;
 height:40px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding-left:25px;
-padding-right:25px;
-font-size:16px;
 
 position:fixed;
 top:0;
@@ -41,22 +36,12 @@ width:100%;
 z-index:1001;
 }
 
-.home a{
-color:white;
-text-decoration:none;
-font-size:16px;
-}
-
-.home-icon{
-margin-right:6px;
-}
-
 
 /* Banner image */
 
 .banner{
 background-image:url("chalkboard.jpg");
-height:70px;
+height:80px;
 background-size:cover;
 background-position:center;
 display:flex;
@@ -64,18 +49,21 @@ align-items:center;
 justify-content:center;
 
 position:sticky;
-top:40px;          /* because topbar height is 40px */
+top:40px;
 z-index:1000;
 
-border-bottom:1px solid #ccc;   /* grey line */
+border-bottom:1px solid #ccc;
 }
 
 
-/* Navigation menu on banner */
+/* Navigation menu */
 
 .banner-menu{
 display:flex;
-gap:55px;
+gap:40px;
+flex-wrap:wrap;              /* mobile fix */
+justify-content:center;
+padding:5px 10px;
 }
 
 .banner-menu a{
@@ -98,8 +86,8 @@ padding-bottom:3px;
 /* Page content */
 
 .container{
-max-width:1150px;   /* increased width */
-margin:50px auto;
+max-width:1150px;
+margin:30px auto;
 padding:0 20px;
 }
 
@@ -118,21 +106,48 @@ color:#333;
 ol{
 font-size:15px;
 line-height:1.4;
+padding-left:18px;
 }
 
 ol li{
 margin-bottom:14px;
 }
 
+
 /* Links */
 
 a{
 color:var(--accent);
-text-decoration:underline;   /* underline added */
+text-decoration:underline;
 }
 
 a:hover{
 color:#0a4fb0;
+}
+
+
+/* MOBILE IMPROVEMENTS */
+
+@media (max-width:768px){
+
+.banner{
+height:auto;
+padding:10px 0;
+}
+
+.banner-menu{
+gap:15px;
+}
+
+.container{
+margin:20px auto;
+padding:0 15px;
+}
+
+h5{
+text-align:center;
+}
+
 }
 
 </style>
@@ -143,25 +158,18 @@ color:#0a4fb0;
 <body>
 
 
-<!-- Black top bar -->
+<!-- Black top bar (empty now) -->
 
-<div class="topbar">
-
-<div class="home">
-<a href="index.html">
-<span class="home-icon">⌂</span>
-<span class="home-name">Shivangi Yadav</span>
-</a>
-</div>
-
-</div>
+<div class="topbar"></div>
 
 
-<!-- Banner with navigation links -->
+<!-- Banner with ALL navigation links -->
 
 <div class="banner">
 
 <div class="banner-menu">
+
+<a href="index.html">Home</a>
 
 <a href="publications.html" class="active">Publications</a>
 
@@ -189,26 +197,26 @@ color:#0a4fb0;
 
 <li>
 (With Projesh Nath Choudhury.) <em>Entrywise preservers of sign regularity</em> <br>
-<a href="https://pubs.ams.org/TRAN?active=press">Transactions of the American Mathematical Society</a>, in press.
-[<a href="https://arxiv.org/abs/2509.17902">arXiv</a>]
+<a href="https://pubs.ams.org/TRAN?active=press" target="_blank" rel="noopener noreferrer">Transactions of the American Mathematical Society</a>, in press.
+[<a href="https://arxiv.org/abs/2509.17902" target="_blank" rel="noopener noreferrer">arXiv</a>]
 </li>
 
 <li>
 (With Projesh Nath Choudhury.) <em>Sign regularity preserving linear operators</em> <br>
-<a href="https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/blms.70209">Bulletin of the London Mathematical Society</a> 58, Article #e70209 (24 pp.), 2026.
-[<a href="https://arxiv.org/abs/2408.02428">arXiv</a>]
+<a href="https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/blms.70209" target="_blank" rel="noopener noreferrer">Bulletin of the London Mathematical Society</a> 58, Article #e70209 (24 pp.), 2026.
+[<a href="https://arxiv.org/abs/2408.02428" target="_blank" rel="noopener noreferrer">arXiv</a>]
 </li>
 
 <li>
-(With Projesh Nath Choudhury.) <em>Sign regular matrices and variation diminution: Single-vector tests and characterizations, following Schoenberg, Gantmacher-Krein, and Motzkin</em> <br>
-<a href="https://www.ams.org/journals/proc/2025-153-02/S0002-9939-2024-17026-X/">Proceedings of the American Mathematical Society</a> 153, pages 497–511, 2025.
-[<a href="https://arxiv.org/abs/2307.11822">arXiv</a>]
+(With Projesh Nath Choudhury.) <em>Sign regular matrices and variation diminution</em> <br>
+<a href="https://www.ams.org/journals/proc/2025-153-02/S0002-9939-2024-17026-X/" target="_blank" rel="noopener noreferrer">Proceedings of the American Mathematical Society</a> 153, pages 497–511, 2025.
+[<a href="https://arxiv.org/abs/2307.11822" target="_blank" rel="noopener noreferrer">arXiv</a>]
 </li>
 
 <li>
-(With Projesh Nath Choudhury.) <em>Constructing strictly sign regular matrices of all sizes and sign patterns</em> <br>
-<a href="https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/blms.70080">Bulletin of the London Mathematical Society</a> 57, pages 2077–2096, 2025.
-[<a href="https://arxiv.org/abs/2411.14287">arXiv</a>]
+(With Projesh Nath Choudhury.) <em>Constructing strictly sign regular matrices</em> <br>
+<a href="https://londmathsoc.onlinelibrary.wiley.com/doi/10.1112/blms.70080" target="_blank" rel="noopener noreferrer">Bulletin of the London Mathematical Society</a> 57, pages 2077–2096, 2025.
+[<a href="https://arxiv.org/abs/2411.14287" target="_blank" rel="noopener noreferrer">arXiv</a>]
 </li>
 
 </ol>
@@ -219,13 +227,12 @@ color:#0a4fb0;
 
 <li>
 (With Projesh Nath Choudhury.) <em>Linear preserver problems in matrix positivity theory</em>, preprint, 2026.
-[<a href="https://arxiv.org/abs/2602.21030">arXiv</a>]
+[<a href="https://arxiv.org/abs/2602.21030" target="_blank" rel="noopener noreferrer">arXiv</a>]
 </li>
 
 </ol>
 
 </div>
-
 
 </body>
 </html>
