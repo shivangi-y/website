@@ -68,11 +68,11 @@ letter-spacing:0.5px;
 
 .container{
 max-width:1150px;
-margin:10px auto;   /* 🔥 reduced spacing */
+margin:10px auto;
 }
 
 .content{
-padding:10px 40px;  /* slightly reduced */
+padding:10px 40px;
 }
 
 /* TOP SECTION */
@@ -82,7 +82,7 @@ display:flex;
 align-items:flex-start;
 justify-content:space-between;
 gap:60px;
-margin-bottom:30px;  /* reduced */
+margin-bottom:30px;
 }
 
 /* PHOTO */
@@ -99,7 +99,7 @@ object-fit:cover;
 .about{
 flex:3;
 max-width:650px;
-margin-top:0;  /* removed extra spacing */
+margin-top:0;
 }
 
 h5{
@@ -180,6 +180,9 @@ max-width:320px;
 
 .contact-text{
 line-height:1.6;
+
+/* important fix for mobile wrapping */
+word-break:break-word;
 }
 
 /* MOBILE */
@@ -207,11 +210,23 @@ flex-wrap:wrap;
 gap:14px;
 }
 
+/* FIXED CONTACT SECTION */
+
 .contact-grid{
 flex-direction:column;
-gap:20px;
+gap:25px;
 align-items:center;
+text-align:center;
 max-width:100%;
+}
+
+.contact-block{
+max-width:100%;
+}
+
+/* override inline right align */
+.contact-text{
+text-align:center !important;
 }
 
 }
@@ -225,7 +240,7 @@ max-width:100%;
 <!-- TOP BAR -->
 
 <div class="topbar">
-<span class="title">Website of Shivangi Yadav</span>
+<span class="title">Welcome to my homepage</span>
 </div>
 
 <div class="container">
@@ -245,27 +260,27 @@ max-width:100%;
 
 <p>
 I am Shivangi Yadav, a Research Associate-I in the 
-<a href="https://math.iisc.ac.in/">Department of Mathematics</a>
-at the <a href="https://iisc.ac.in/">Indian Institute of Science</a>, 
+<a href="https://math.iisc.ac.in/" target="_blank" rel="noopener noreferrer">Department of Mathematics</a>
+at the <a href="https://iisc.ac.in/" target="_blank" rel="noopener noreferrer">Indian Institute of Science</a>, Bengaluru,
 working under the mentorship of Prof. 
-<a href="https://math.iisc.ac.in/~khare/">Apoorva Khare</a>. 
+<a href="https://math.iisc.ac.in/~khare/" target="_blank" rel="noopener noreferrer">Apoorva Khare</a>. 
 My research is centered on problems involving matrix positivity and preserver problems.
 </p>
 
 <p>
 You can find my curriculum vitae
-<a href="https://drive.google.com/file/d/1NuwowkGhz1jEegWBpdmwqeeMYE98OU-j/view?usp=sharing">here</a>.
+<a href="https://drive.google.com/file/d/1NuwowkGhz1jEegWBpdmwqeeMYE98OU-j/view?usp=sharing" target="_blank" rel="noopener noreferrer">here</a>.
 </p>
 
 </div>
 
 <div class="links">
 
-<a href="publications.html">Publications</a>
-<a href="talks.html">Talks</a>
-<a href="academic.html">Academic activities</a>
-<a href="teaching.html">Teaching</a>
-<a href="awards.html">Awards & honors</a>
+<a href="publications.html" target="_blank" rel="noopener noreferrer">Publications</a>
+<a href="talks.html" target="_blank" rel="noopener noreferrer">Talks</a>
+<a href="academic.html" target="_blank" rel="noopener noreferrer">Academic activities</a>
+<a href="teaching.html" target="_blank" rel="noopener noreferrer">Teaching</a>
+<a href="awards.html" target="_blank" rel="noopener noreferrer">Awards & honors</a>
 
 </div>
 
@@ -282,39 +297,39 @@ You can find my curriculum vitae
 <ul>
 
 <li>
-Research Associate-I in <a href="https://math.iisc.ac.in/">Mathematics</a>,
-<a href="https://iisc.ac.in/">Indian Institute of Science</a>, Bengaluru
+Research Associate-I in <a href="https://math.iisc.ac.in/" target="_blank" rel="noopener noreferrer">Mathematics</a>,
+<a href="https://iisc.ac.in/" target="_blank" rel="noopener noreferrer">Indian Institute of Science</a>, Bengaluru
 (Apr 2026 - present) <br>
 <em>Mentor:</em> Prof.
-<a href="https://math.iisc.ac.in/~khare/">Apoorva Khare</a>
+<a href="https://math.iisc.ac.in/~khare/" target="_blank" rel="noopener noreferrer">Apoorva Khare</a>
 </li>
 
 <li>
 Postdoctoral Fellow in <a href="https://math.iitgn.ac.in/">Mathematics</a>,
-<a href="https://iitgn.ac.in/">Indian Institute of Technology Gandhinagar</a>
+<a href="https://iitgn.ac.in/" target="_blank" rel="noopener noreferrer">Indian Institute of Technology Gandhinagar</a>
 (Jan 2021 – Apr 2026) <br>
 <em>Mentor:</em> Prof.
-<a href="https://projesh.people.iitgn.ac.in/">Projesh Nath Choudhury</a>
+<a href="https://projesh.people.iitgn.ac.in/" target="_blank" rel="noopener noreferrer">Projesh Nath Choudhury</a>
 </li>
 
 <li>
 Ph.D. in <a href="https://math.iitgn.ac.in/">Mathematics</a>,
-<a href="https://iitgn.ac.in/">Indian Institute of Technology Gandhinagar</a>
+<a href="https://iitgn.ac.in/" target="_blank" rel="noopener noreferrer">Indian Institute of Technology Gandhinagar</a>
 (Jan 2021 – Jan 2026) <br>
 <em>Thesis title:</em> Sign regularity: variation diminishing property and preserver problems <br>
 <em>Advisor:</em> Prof. 
-<a href="https://projesh.people.iitgn.ac.in/">Projesh Nath Choudhury</a>
+<a href="https://projesh.people.iitgn.ac.in/" target="_blank" rel="noopener noreferrer">Projesh Nath Choudhury</a>
 </li>
 
 <li>
 M.Sc. in <a href="https://www.nitrkl.ac.in/MA/">Mathematics</a>,
-<a href="https://www.nitrkl.ac.in/">National Institute of Technology Rourkela</a> (2018 – 2020)
+<a href="https://www.nitrkl.ac.in/" target="_blank" rel="noopener noreferrer">National Institute of Technology Rourkela</a> (2018 – 2020)
 </li>
 
 <li>
 B.Sc. (Hons.) in
-<a href="https://www.hansrajcollege.ac.in/academics/departments/science/mathematics/about">Mathematics</a>,
-<a href="https://www.hansrajcollege.ac.in/">Hansraj College</a>, University of Delhi (2015 – 2018)
+<a href="https://www.hansrajcollege.ac.in/academics/departments/science/mathematics/about" target="_blank" rel="noopener noreferrer">Mathematics</a>,
+<a href="https://www.hansrajcollege.ac.in/" target="_blank" rel="noopener noreferrer">Hansraj College</a>, University of Delhi (2015 – 2018)
 </li>
 
 </ul>
