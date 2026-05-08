@@ -183,7 +183,6 @@ line-height:1.6;
 word-break:break-word;
 }
 
-/* ✅ Office left aligned but still on right side */
 .office{
 text-align:left;
 }
@@ -207,13 +206,31 @@ justify-content:center;
 margin:0 auto;
 }
 
+/* ✅ ABOUT SECTION FIX */
+
+.about{
+max-width:100%;
+padding:0 10px;
+}
+
+.about h5{
+text-align:center;
+}
+
+.about p{
+text-align:left;
+}
+
+/* LINKS */
+
 .links{
 flex-direction:row;
 flex-wrap:wrap;
 gap:14px;
+justify-content:center;
 }
 
-/* FIXED CONTACT SECTION */
+/* CONTACT */
 
 .contact-grid{
 flex-direction:column;
