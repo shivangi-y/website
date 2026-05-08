@@ -28,7 +28,7 @@ font-family: Georgia, "Times New Roman", serif;
 background:var(--bg);
 color:#111;
 font-size:15px;
-padding-top:60px;
+padding-top:50px; /* reduced from 60px */
 }
 
 /* LINKS */
@@ -47,7 +47,7 @@ color:var(--accent);
 .topbar{
 background:#000;
 color:#fff;
-padding:20px 40px;
+padding:15px 40px; /* reduced from 20px */
 display:flex;
 justify-content:center;
 align-items:center;
@@ -68,11 +68,11 @@ letter-spacing:0.5px;
 
 .container{
 max-width:1150px;
-margin:10px auto;
+margin:5px auto; /* reduced */
 }
 
 .content{
-padding:10px 40px;
+padding:5px 40px; /* reduced */
 }
 
 /* TOP SECTION */
@@ -81,8 +81,8 @@ padding:10px 40px;
 display:flex;
 align-items:flex-start;
 justify-content:space-between;
-gap:60px;
-margin-bottom:30px;
+gap:40px; /* reduced from 60px */
+margin-bottom:20px; /* reduced */
 }
 
 /* PHOTO */
@@ -122,8 +122,8 @@ flex:1;
 min-width:180px;
 display:flex;
 flex-direction:column;
-gap:16px;
-margin-top:10px;
+gap:10px; /* reduced from 16px */
+margin-top:5px; /* reduced */
 }
 
 .links a{
@@ -193,20 +193,23 @@ text-align:left;
 
 .top-section{
 flex-direction:column;
-gap:20px;
+gap:15px;
+align-items:center; /* ensures centering */
 }
 
-/* center photo */
+/* CENTER PHOTO FIX (stronger) */
 .photo{
+width:100%;
 display:flex;
 justify-content:center;
 }
 
 .photo img{
+display:block;
 margin:0 auto;
 }
 
-/* ✅ ABOUT SECTION FIX */
+/* ABOUT */
 
 .about{
 max-width:100%;
@@ -226,7 +229,7 @@ text-align:left;
 .links{
 flex-direction:row;
 flex-wrap:wrap;
-gap:14px;
+gap:10px; /* tighter */
 justify-content:center;
 }
 
