@@ -180,9 +180,12 @@ max-width:320px;
 
 .contact-text{
 line-height:1.6;
-
-/* important fix for mobile wrapping */
 word-break:break-word;
+}
+
+/* ✅ Office left aligned but still on right side */
+.office{
+text-align:left;
 }
 
 /* MOBILE */
@@ -224,7 +227,6 @@ max-width:100%;
 max-width:100%;
 }
 
-/* override inline right align */
 .contact-text{
 text-align:center !important;
 }
@@ -353,7 +355,7 @@ shivangi97 [dot] y [at] gmail [dot] com
 </div>
 
 <div class="contact-block">
-<div class="contact-text" style="text-align:right;">
+<div class="contact-text office">
 <strong>Office</strong><br>
 Office no. L28, Department of Mathematics<br>
 Indian Institute of Science, CV Raman Road<br>
