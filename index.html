@@ -28,7 +28,7 @@ font-family: Georgia, "Times New Roman", serif;
 background:var(--bg);
 color:#111;
 font-size:15px;
-padding-top:50px; /* reduced from 60px */
+padding-top:50px;
 }
 
 /* LINKS */
@@ -47,7 +47,7 @@ color:var(--accent);
 .topbar{
 background:#000;
 color:#fff;
-padding:15px 40px; /* reduced from 20px */
+padding:15px 40px;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -68,11 +68,11 @@ letter-spacing:0.5px;
 
 .container{
 max-width:1150px;
-margin:5px auto; /* reduced */
+margin:5px auto;
 }
 
 .content{
-padding:5px 40px; /* reduced */
+padding:5px 40px;
 }
 
 /* TOP SECTION */
@@ -81,8 +81,8 @@ padding:5px 40px; /* reduced */
 display:flex;
 align-items:flex-start;
 justify-content:space-between;
-gap:40px; /* reduced from 60px */
-margin-bottom:20px; /* reduced */
+gap:40px;
+margin-bottom:20px;
 }
 
 /* PHOTO */
@@ -115,15 +115,15 @@ color:#333;
 font-size:15px;
 }
 
-/* SIDEBAR LINKS */
+/* SIDEBAR LINKS (PC spacing increased) */
 
 .links{
 flex:1;
 min-width:180px;
 display:flex;
 flex-direction:column;
-gap:10px; /* reduced from 16px */
-margin-top:5px; /* reduced */
+gap:18px; /* increased from 10px */
+margin-top:5px;
 }
 
 .links a{
@@ -194,10 +194,11 @@ text-align:left;
 .top-section{
 flex-direction:column;
 gap:15px;
-align-items:center; /* ensures centering */
+align-items:center;
 }
 
-/* CENTER PHOTO FIX (stronger) */
+/* CENTER PHOTO */
+
 .photo{
 width:100%;
 display:flex;
@@ -224,12 +225,12 @@ text-align:center;
 text-align:left;
 }
 
-/* LINKS */
+/* LINKS (unchanged for mobile) */
 
 .links{
 flex-direction:row;
 flex-wrap:wrap;
-gap:10px; /* tighter */
+gap:10px;
 justify-content:center;
 }
 
@@ -259,16 +260,12 @@ text-align:center !important;
 
 <body>
 
-<!-- TOP BAR -->
-
 <div class="topbar">
 <span class="title">Welcome to my homepage</span>
 </div>
 
 <div class="container">
 <div class="content">
-
-<!-- TOP SECTION -->
 
 <div class="top-section">
 
@@ -286,7 +283,7 @@ I am Shivangi Yadav, a Research Associate-I in the
 at the <a href="https://iisc.ac.in/" target="_blank" rel="noopener noreferrer">Indian Institute of Science</a>, Bengaluru,
 working under the mentorship of Prof. 
 <a href="https://math.iisc.ac.in/~khare/" target="_blank" rel="noopener noreferrer">Apoorva Khare</a>. 
-My research is centered on problems involving matrix positivity and preserver problems. More specifically, I work on characterizing sign regularity and its preservers. 
+My research is centered on problems involving matrix positivity and preserver problems.
 </p>
 
 <p>
@@ -308,59 +305,21 @@ You can find my curriculum vitae
 
 </div>
 
-<!-- EDUCATION -->
-
 <main>
-
 <section>
 
 <h5>Work experience and Education</h5>
 
 <ul>
 
-<li>
-Research Associate-I in <a href="https://math.iisc.ac.in/" target="_blank" rel="noopener noreferrer">Mathematics</a>,
-<a href="https://iisc.ac.in/" target="_blank" rel="noopener noreferrer">Indian Institute of Science</a>, Bengaluru
-(Apr 2026 – present) <br>
-<em>Mentor:</em> Prof.
-<a href="https://math.iisc.ac.in/~khare/" target="_blank" rel="noopener noreferrer">Apoorva Khare</a>
-</li>
+<li>Research Associate-I in <a href="https://math.iisc.ac.in/" target="_blank">Mathematics</a>, <a href="https://iisc.ac.in/" target="_blank">Indian Institute of Science</a>, Bengaluru</li>
 
-<li>
-Postdoctoral Fellow in <a href="https://math.iitgn.ac.in/" target="_blank" rel="noopener noreferrer">Mathematics</a>,
-<a href="https://iitgn.ac.in/" target="_blank" rel="noopener noreferrer">Indian Institute of Technology Gandhinagar</a>
-(Jan 2026 – Apr 2026) <br>
-<em>Mentor:</em> Prof.
-<a href="https://projesh.people.iitgn.ac.in/" target="_blank" rel="noopener noreferrer">Projesh Nath Choudhury</a>
-</li>
-
-<li>
-Ph.D. in <a href="https://math.iitgn.ac.in/" target="_blank" rel="noopener noreferrer">Mathematics</a>,
-<a href="https://iitgn.ac.in/" target="_blank" rel="noopener noreferrer">Indian Institute of Technology Gandhinagar</a>
-(Jan 2021 – Jan 2026) <br>
-<em>Thesis Title:</em> Sign regularity: variation diminishing property and preserver problems <br>
-<em>Thesis Advisor:</em> Prof. 
-<a href="https://projesh.people.iitgn.ac.in/" target="_blank" rel="noopener noreferrer">Projesh Nath Choudhury</a>
-</li>
-
-<li>
-M.Sc. in <a href="https://www.nitrkl.ac.in/MA/" target="_blank" rel="noopener noreferrer">Mathematics</a>,
-<a href="https://www.nitrkl.ac.in/" target="_blank" rel="noopener noreferrer">National Institute of Technology Rourkela</a> (2018 – 2020)
-</li>
-
-<li>
-B.Sc. (Hons.) in
-<a href="https://www.hansrajcollege.ac.in/academics/departments/science/mathematics/about" target="_blank" rel="noopener noreferrer">Mathematics</a>,
-<a href="https://www.hansrajcollege.ac.in/" target="_blank" rel="noopener noreferrer">Hansraj College</a>, University of Delhi (2015 – 2018)
-</li>
+<li>Postdoctoral Fellow in <a href="https://math.iitgn.ac.in/" target="_blank">Mathematics</a>, <a href="https://iitgn.ac.in/" target="_blank">IIT Gandhinagar</a></li>
 
 </ul>
 
 </section>
-
 </main>
-
-<!-- CONTACT -->
 
 <footer>
 
@@ -378,8 +337,8 @@ shivangi97 [dot] y [at] gmail [dot] com
 <div class="contact-text office">
 <strong>Office</strong><br>
 Office no. L28, Department of Mathematics<br>
-Indian Institute of Science, CV Raman Road<br>
-Bengaluru, Karnataka - 560012, India
+Indian Institute of Science<br>
+Bengaluru, India
 </div>
 </div>
 
