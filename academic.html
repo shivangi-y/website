@@ -5,6 +5,8 @@
 
 <title>Shivangi Yadav</title>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 
 :root{
@@ -19,21 +21,14 @@ font-family: Georgia, "Times New Roman", serif;
 background:var(--bg);
 color:#111;
 font-size:15px;
-padding-top:40px;   /* space for fixed topbar */
+padding-top:40px;
 }
 
-/* Top black bar */
+/* Top black bar (empty now) */
 
 .topbar{
 background:black;
-color:white;
 height:40px;
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding-left:25px;
-padding-right:25px;
-font-size:16px;
 
 position:fixed;
 top:0;
@@ -41,21 +36,12 @@ width:100%;
 z-index:1001;
 }
 
-.home a{
-color:white;
-text-decoration:none;
-font-size:16px;
-}
-
-.home-icon{
-margin-right:6px;
-}
 
 /* Banner image */
 
 .banner{
 background-image:url("chalkboard.jpg");
-height:70px;
+height:80px;
 background-size:cover;
 background-position:center;
 display:flex;
@@ -63,18 +49,21 @@ align-items:center;
 justify-content:center;
 
 position:sticky;
-top:40px;          /* because topbar height is 40px */
+top:40px;
 z-index:1000;
 
-border-bottom:1px solid #ccc;   /* grey line */
+border-bottom:1px solid #ccc;
 }
 
 
-/* Navigation menu on banner */
+/* Navigation menu */
 
 .banner-menu{
 display:flex;
-gap:55px;
+gap:40px;
+flex-wrap:wrap;        /* ✅ mobile friendly */
+justify-content:center;
+padding:5px 10px;
 }
 
 .banner-menu a{
@@ -94,12 +83,11 @@ padding-bottom:3px;
 }
 
 
-
 /* Page content */
 
 .container{
 max-width:1150px;
-margin:50px auto;
+margin:30px auto;
 padding:0 20px;
 }
 
@@ -118,11 +106,13 @@ color:#333;
 ul{
 font-size:15px;
 line-height:1.4;
+padding-left:18px;
 }
 
 ul li{
 margin-bottom:14px;
 }
+
 
 /* Links */
 
@@ -135,6 +125,31 @@ a:hover{
 color:#0a4fb0;
 }
 
+
+/* ✅ MOBILE IMPROVEMENTS */
+
+@media (max-width:768px){
+
+.banner{
+height:auto;
+padding:10px 0;
+}
+
+.banner-menu{
+gap:15px;
+}
+
+.container{
+margin:20px auto;
+padding:0 15px;
+}
+
+h5{
+text-align:center;
+}
+
+}
+
 </style>
 
 </head>
@@ -143,26 +158,18 @@ color:#0a4fb0;
 <body>
 
 
-<!-- Black top bar -->
+<!-- Top bar -->
 
-<div class="topbar">
-
-<div class="home">
-<a href="index.html">
-<span class="home-icon">⌂</span>
-<span class="home-name">Shivangi Yadav</span>
-</a>
-</div>
-
-</div>
+<div class="topbar"></div>
 
 
-
-<!-- Banner with navigation links -->
+<!-- Banner with navigation -->
 
 <div class="banner">
 
 <div class="banner-menu">
+
+<a href="index.html">Home</a>
 
 <a href="publications.html">Publications</a>
 
@@ -190,7 +197,7 @@ color:#0a4fb0;
 <ul>
 <li>
 <strong>Aug - Dec 2024:</strong> Organizer, 
-<a href="https://sites.google.com/iitgn.ac.in/gradmathseminar/home">Graduate Students' Seminar</a> 
+<a href="https://sites.google.com/iitgn.ac.in/gradmathseminar/home" target="_blank" rel="noopener noreferrer">Graduate Students' Seminar</a> 
 (with Prof. Projesh Nath Choudhury and Siddhi Balu Ambhore), IIT Gandhinagar.
 </li>
 </ul>
@@ -202,58 +209,57 @@ color:#0a4fb0;
 
 <li>
 <strong>Jan 12 - 16, 2026:</strong> 
-<a href="https://sites.google.com/view/emstmc2026/home">Indo-European Conference on Mathematics</a>, 
+<a href="https://sites.google.com/view/emstmc2026/home" target="_blank" rel="noopener noreferrer">Indo-European Conference on Mathematics</a>, 
 SPPU and IISER Pune, Maharashtra, India.
 </li>
 
 <li>
 <strong>Dec 15, 2025 - Jan 03, 2026:</strong> 
-<a href="https://www.atmschools.org/school/2025/AIS/ac">AIS - Advanced Combinatorics</a>, 
+<a href="https://www.atmschools.org/school/2025/AIS/ac" target="_blank" rel="noopener noreferrer">AIS - Advanced Combinatorics</a>, 
 Ahmedabad University, Ahmedabad, India.
 </li>
 
 <li>
 <strong>Oct 27 - 31, 2025:</strong> 
-<a href="https://gian.iith.ac.in/">Global Initiative of Academic Networks</a> Course on 
-<a href="https://drive.google.com/file/d/1LaEzRj7cmMs7eMb5moRVSadhHRBniDCy/view">Spectral Graph Theory</a>, 
+<a href="https://gian.iith.ac.in/" target="_blank" rel="noopener noreferrer">Global Initiative of Academic Networks</a> Course on 
+<a href="https://drive.google.com/file/d/1LaEzRj7cmMs7eMb5moRVSadhHRBniDCy/view" target="_blank" rel="noopener noreferrer">Spectral Graph Theory</a>, 
 IIT Hyderabad, Hyderabad, India.
 </li>
 
 <li>
 <strong>Jun 23 - 27, 2025:</strong> 
-<a href="https://ilas2025.tw/">26th Conference of the International Linear Algebra Society</a>, 
+<a href="https://ilas2025.tw/" target="_blank" rel="noopener noreferrer">26th Conference of the International Linear Algebra Society</a>, 
 National Sun Yat-sen University, Kaohsiung, Taiwan.
 </li>
 
 <li>
 <strong>Jul 08 - 13, 2024:</strong> 
 Asian and European Schools in Mathematics on 
-<a href="https://sites.google.com/iiserb.ac.in/schoolonlinearpreserverproblem/home">Linear Preserver Problems</a>, 
+<a href="https://sites.google.com/iiserb.ac.in/schoolonlinearpreserverproblem/home" target="_blank" rel="noopener noreferrer">Linear Preserver Problems</a>, 
 IISER Bhopal, Bhopal, India.
 </li>
 
 <li>
 <strong>Dec 18 - 21, 2023:</strong> 
-<a href="#">International Conference on Linear Algebra and its Applications</a>, 
+<a href="https://carams.in/events/iclaa2023/" target="_blank" rel="noopener noreferrer">International Conference on Linear Algebra and its Applications</a>, 
 Manipal Academy of Higher Education, Manipal, India.
 </li>
 
 <li>
 <strong>Dec 11 - 17, 2023:</strong> 
-<a href="#">International Workshop on Special Matrices, Graphs, and Applications</a>, 
+<a href="https://carams.in/events/iwsmga2023/" target="_blank" rel="noopener noreferrer">International Workshop on Special Matrices, Graphs, and Applications</a>, 
 Manipal Academy of Higher Education, Manipal, India.
 </li>
 
 <li>
 <strong>Mar 06 - 11, 2023:</strong> 
-<a href="https://www.atmschools.org/school/2023/NCMW/wotoa">NCMW - Operator Theory and Operator Algebra</a>, 
+<a href="https://www.atmschools.org/school/2023/NCMW/wotoa" target="_blank" rel="noopener noreferrer">NCMW - Operator Theory and Operator Algebra</a>, 
 IIT Gandhinagar, Gandhinagar, India.
 </li>
 
 <li>
 <strong>Mar 21 - 22, 2017:</strong> 
-Mathematics Symposium organized by the Department of Mathematics, 
-St. Stephen’s College, University of Delhi, New Delhi, India.
+Mathematics Symposium, St. Stephen’s College, University of Delhi, New Delhi, India.
 </li>
 
 </ul>
@@ -266,10 +272,10 @@ St. Stephen’s College, University of Delhi, New Delhi, India.
 <li>
 <strong>May 20 - Jul 12, 2019:</strong> 
 IISER Kolkata, 
-<a href="https://math.iiserkol.ac.in/">Department of Mathematics and Statistics</a>, 
+<a href="https://math.iiserkol.ac.in/" target="_blank" rel="noopener noreferrer">Department of Mathematics and Statistics</a>, 
 under the supervision of Prof. 
-<a href="https://math.iiserkol.ac.in/faculties/zinna.html">Md. Ali Zinna</a>, 
-on the topic, "Study of Group Theory".
+<a href="https://math.iiserkol.ac.in/faculties/zinna.html" target="_blank" rel="noopener noreferrer">Md. Ali Zinna</a>, 
+on "Study of Group Theory".
 </li>
 
 </ul>
